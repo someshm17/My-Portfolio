@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Mail, c as FileBadge, d as ArrowRight, i as MessageSquareMore, l as Download, n as Users, o as Linkedin, r as Phone, s as Github, t as X, u as Award } from "../_libs/lucide-react.mjs";
 import { t as esm_default } from "../_libs/emailjs__browser.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-m2F0hAhZ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DTYBXTSa.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var somesh_default = "/assets/somesh-SITua8jp.png";
@@ -202,7 +202,7 @@ function Index() {
 								className: "animate-rise",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-										className: "max-w-full break-words font-display text-[clamp(3rem,11.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl",
+										className: "max-w-full font-display text-[clamp(2.3rem,8.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl",
 										children: [
 											"Hi,",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
@@ -213,7 +213,7 @@ function Index() {
 											}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-												className: "text-primary",
+												className: "text-primary whitespace-nowrap",
 												children: "Muttinkantimath"
 											})
 										]

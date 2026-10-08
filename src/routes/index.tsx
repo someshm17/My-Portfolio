@@ -350,15 +350,15 @@ function Index() {
           {/* Left */}
 
           <div className="animate-rise">
-            <h1 className="max-w-full break-words font-display text-[clamp(3rem,11.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl">
-              Hi,
-              <br />
-              I’m <span className="text-primary">Somesh</span>
-              <br />
-              <span className="text-primary">
-                Muttinkantimath
-              </span>
-            </h1>
+           <h1 className="max-w-full font-display text-[clamp(2.3rem,8.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl">
+  Hi,
+  <br />
+  I’m <span className="text-primary">Somesh</span>
+  <br />
+<span className="text-primary whitespace-nowrap">
+  Muttinkantimath
+</span>
+</h1>
 
             <p className="mt-4 text-xl md:mt-5 md:text-2xl">
               Software Developer

@@ -232,14 +232,17 @@ body {
     max-width: 100%;
   }
 
-  h1,
-  h2,
-  h3,
-  p,
-  a,
-  span {
-    overflow-wrap: break-word;
-  }
+h2,
+h3,
+p,
+a,
+span {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  overflow-wrap: normal;
+}
 
   .reveal {
     max-width: 100%;
