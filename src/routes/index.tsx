@@ -393,7 +393,7 @@ function Index() {
           {/* Right */}
 
           <div className="animate-rise [animation-delay:250ms]">
-            <p className="text-primary">Expert on</p>
+            <p className="text-primary">What I do</p>
 
             <p className="mt-3 max-w-md text-xl font-medium leading-snug md:max-w-none md:text-xl lg:text-2xl xl:text-[1.7rem]">
               Based in Bengaluru, India — I’m a full-stack &amp;

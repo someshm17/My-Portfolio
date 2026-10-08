@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Mail, c as FileBadge, d as ArrowRight, i as MessageSquareMore, l as Download, n as Users, o as Linkedin, r as Phone, s as Github, t as X, u as Award } from "../_libs/lucide-react.mjs";
 import { t as esm_default } from "../_libs/emailjs__browser.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DTYBXTSa.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-I-rFkUMJ.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var somesh_default = "/assets/somesh-SITua8jp.png";
@@ -246,7 +246,7 @@ function Index() {
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "text-primary",
-										children: "Expert on"
+										children: "What I do"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 										className: "mt-3 max-w-md text-xl font-medium leading-snug md:max-w-none md:text-xl lg:text-2xl xl:text-[1.7rem]",
