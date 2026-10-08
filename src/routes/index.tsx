@@ -544,85 +544,66 @@ function Index() {
           WORK
           ========================= */}
 
-      <Section
-        id="work"
-        eyebrow="Projects"
-        title="Selected Work"
+   {/* WORK */}
+
+<Section id="work" eyebrow="Projects" title="Selected Work">
+  <div className="space-y-6">
+    {[
+      {
+        n: "GENAI — Generative AI Chatbot",
+        s: "Full-Stack AI Chatbot",
+        d: "A conversational AI interface with full-stack architecture, OpenAI integration and persistent chat history in a database.",
+        t: "React.js · Node.js · Express.js · MongoDB · OpenAI API",
+      },
+            {
+  n: "Digital-Legal Marketplace",
+  s: "Full-Stack Legal Services Platform",
+  d: "A full-stack platform connecting clients with lawyers through legal service discovery, lawyer matching, KYC, appointment scheduling, document management, verification, and payment workflows.",
+  t: "React.js · Node.js · Express.js · REST APIs · Multer",
+},
+      {
+        n: "Patient Care System",
+        s: "Healthcare Management Platform",
+        d: "Manages health records, appointments and treatment tracking, with location-aware features.",
+        t: "Java · React.js · MySQL · Geolocation API",
+      },
+    ].map((project, index) => (
+      <article
+        key={project.n}
+        className="reveal group relative overflow-hidden rounded-lg border border-border p-8 transition hover:-translate-y-1 hover:border-primary/40 md:p-12"
       >
-        <div className="space-y-6">
-          {[
-            {
-              n: "JALSETU",
-              s: "Smart Irrigation System",
-              d: "A GSM + NRI-based smart irrigation system developed to support rural farmers with automated, remote-controlled watering.",
-              t: "IoT · GSM · Embedded",
-              badge: "Runners-Up — Anveshana 2025–26",
-              feat: true,
-            },
-            {
-              n: "ChatGPT Clone",
-              s: "Full-Stack AI Chatbot",
-              d: "A conversational AI interface with full-stack architecture, OpenAI integration and persistent chat history in a database.",
-              t: "React.js · Node.js · Express.js · MongoDB · OpenAI API",
-            },
-            {
-              n: "Patient Care System",
-              s: "Healthcare Management Platform",
-              d: "Manages health records, appointments and treatment tracking, with location-aware features.",
-              t: "Java · React.js · MySQL · Geolocation API",
-            },
-          ].map((project, index) => (
-            <article
-              key={project.n}
-              className={`reveal group relative overflow-hidden rounded-lg border p-8 transition hover:-translate-y-1 md:p-12 ${
-                project.feat
-                  ? "border-primary/60 bg-card"
-                  : "border-border hover:border-primary/40"
-              }`}
-            >
-              {project.feat && (
-                <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full border-2 border-accent/40" />
-              )}
+        <div className="relative grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-start">
+          <span className="font-display text-5xl text-muted-foreground/40">
+            0{index + 1}
+          </span>
 
-              <div className="relative grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-start">
-                <span className="font-display text-5xl text-muted-foreground/40">
-                  0{index + 1}
-                </span>
+          <div>
+            <h3 className="font-display text-3xl md:text-4xl">
+              {project.n}
+            </h3>
 
-                <div>
-                  {project.badge && (
-                    <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1 text-xs text-primary-foreground">
-                      <Award size={14} />
-                      {project.badge}
-                    </p>
-                  )}
+            <p className="mt-1 text-primary">
+              {project.s}
+            </p>
 
-                  <h3 className="font-display text-3xl md:text-4xl">
-                    {project.n}
-                  </h3>
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+              {project.d}
+            </p>
 
-                  <p className="mt-1 text-primary">
-                    {project.s}
-                  </p>
+            <p className="mt-5 text-sm tracking-wide text-foreground/80">
+              {project.t}
+            </p>
+          </div>
 
-                  <p className="mt-4 max-w-2xl text-muted-foreground">
-                    {project.d}
-                  </p>
-
-                  <p className="mt-5 text-sm tracking-wide text-foreground/80">
-                    {project.t}
-                  </p>
-                </div>
-
-                <ArrowRight
-                  className="hidden -rotate-45 text-muted-foreground transition group-hover:rotate-0 group-hover:text-primary md:block"
-                  size={28}
-                />
-              </div>
-            </article>
-          ))}
+          <ArrowRight
+            className="hidden -rotate-45 text-muted-foreground transition group-hover:rotate-0 group-hover:text-primary md:block"
+            size={28}
+          />
         </div>
-      </Section>
+      </article>
+    ))}
+  </div>
+</Section>
 
       {/* =========================
           SERVICES
