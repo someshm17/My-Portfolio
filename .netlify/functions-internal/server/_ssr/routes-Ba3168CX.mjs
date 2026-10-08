@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Mail, c as FileBadge, d as ArrowRight, i as MessageSquareMore, l as Download, n as Users, o as Linkedin, r as Phone, s as Github, t as X, u as Award } from "../_libs/lucide-react.mjs";
 import { t as esm_default } from "../_libs/emailjs__browser.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BQxxNNme.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Ba3168CX.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var somesh_default = "/assets/somesh-SITua8jp.png";
@@ -181,11 +181,11 @@ function Index() {
 				className: "relative min-h-screen overflow-hidden",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "pointer-events-none absolute inset-x-0 bottom-0 top-8 flex justify-center md:-top-12 md:translate-x-[9%] lg:translate-x-[3%] xl:translate-x-0",
+						className: "pointer-events-none absolute inset-x-0 bottom-0 top-8 hidden justify-center md:-top-12 md:flex md:translate-x-[9%] lg:translate-x-[3%] xl:translate-x-0",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: somesh_default,
 							alt: "Portrait of Somesh Muttinkantimath",
-							className: "animate-portrait portrait-mask h-full max-h-[1000px] w-auto max-w-none object-cover object-top opacity-60 md:opacity-100"
+							className: "animate-portrait portrait-mask h-full max-h-[1000px] w-auto max-w-none object-cover object-top md:opacity-100"
 						})
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" }),
@@ -196,13 +196,13 @@ function Index() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "animate-float absolute right-[7%] top-[17%] hidden h-9 w-9 rounded-full bg-accent [animation-delay:1.5s] lg:block" }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "animate-float absolute left-[4%] top-[72%] hidden h-2 w-2 rotate-45 bg-primary [animation-delay:3s] xl:block" }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "relative z-10 mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-start gap-10 px-6 pb-[14vh] pt-20 md:pt-[11vh] md:grid-cols-[1fr_1fr_1fr] md:px-16 lg:pt-[10vh]",
+						className: "relative z-10 mx-auto grid min-h-0 w-full max-w-7xl grid-cols-1 items-start gap-10 overflow-x-hidden px-6 pb-20 pt-28 md:min-h-screen md:overflow-visible md:pt-[11vh] md:grid-cols-[1fr_1fr_1fr] md:px-16 md:pb-[14vh] lg:pt-[10vh]",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 								className: "animate-rise",
 								children: [
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
-										className: "font-display text-5xl font-bold leading-[1.15] md:text-4xl lg:text-5xl xl:text-6xl",
+										className: "max-w-full break-words font-display text-[clamp(3rem,11.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl",
 										children: [
 											"Hi,",
 											/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
@@ -219,18 +219,26 @@ function Index() {
 										]
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-5 text-2xl",
+										className: "mt-4 text-xl md:mt-5 md:text-2xl",
 										children: "Software Developer"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 										href: "#work",
-										className: "group mt-12 inline-flex items-center gap-4 rounded-md bg-primary py-1.5 pl-5 pr-1.5 text-primary-foreground shadow-[0_10px_30px_-10px_var(--primary)] transition hover:-translate-y-0.5",
+										className: "group mt-8 inline-flex max-w-full items-center gap-4 rounded-md bg-primary py-1.5 pl-5 pr-1.5 text-primary-foreground shadow-[0_10px_30px_-10px_var(--primary)] transition hover:-translate-y-0.5 md:mt-12",
 										children: ["View My Work", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "rounded bg-primary-foreground/25 px-3 py-2 transition group-hover:translate-x-0.5",
 											children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { size: 18 })
 										})]
 									})
 								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "relative z-0 -my-2 flex h-[420px] items-center justify-center md:hidden",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+									src: somesh_default,
+									alt: "Portrait of Somesh Muttinkantimath",
+									className: "animate-portrait portrait-mask h-full w-auto max-w-[94vw] object-contain object-top opacity-55"
+								})
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "hidden md:block" }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -241,11 +249,11 @@ function Index() {
 										children: "Expert on"
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-3 text-2xl font-medium leading-snug md:text-xl lg:text-2xl xl:text-[1.7rem]",
+										className: "mt-3 max-w-md text-xl font-medium leading-snug md:max-w-none md:text-xl lg:text-2xl xl:text-[1.7rem]",
 										children: "Based in Bengaluru, India — I’m a full-stack & Java developer."
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "mt-7 leading-relaxed text-muted-foreground",
+										className: "mt-6 max-w-md leading-relaxed text-muted-foreground md:mt-7 md:max-w-none",
 										children: "A Computer Science graduate and Software Developer focused on building practical, responsive applications and solving problems with clean, efficient solutions."
 									}),
 									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
@@ -259,7 +267,7 @@ function Index() {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "absolute bottom-10 left-6 z-10 flex items-end gap-16 md:left-16",
+						className: "relative z-10 mt-10 flex items-end gap-6 px-0 pb-2 md:absolute md:bottom-10 md:left-16 md:mt-0 md:gap-16 md:px-0 md:pb-0",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "hidden md:block",
@@ -283,7 +291,7 @@ function Index() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 						href: "#contact",
-						className: "absolute bottom-10 right-6 z-10 flex items-center gap-3 text-sm hover:text-primary md:right-16",
+						className: "relative z-10 mx-6 mt-6 flex items-center gap-3 self-end text-sm hover:text-primary md:absolute md:bottom-10 md:right-16 md:mx-0 md:mt-0",
 						children: ["Let’s Chat", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "relative",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageSquareMore, { size: 30 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-signal" })]
@@ -536,8 +544,14 @@ function Index() {
 									className: "mt-10 space-y-4",
 									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 										href: `mailto:${EMAIL}`,
-										className: "flex items-center gap-3 text-lg hover:text-primary",
-										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 20 }), EMAIL]
+										className: "flex min-w-0 items-start gap-3 text-lg hover:text-primary",
+										children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, {
+											size: 20,
+											className: "mt-1 shrink-0"
+										}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+											className: "break-all md:break-normal",
+											children: EMAIL
+										})]
 									}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 										href: "tel:+918867074560",
 										className: "flex items-center gap-3 text-lg hover:text-primary",

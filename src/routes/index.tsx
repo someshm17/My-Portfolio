@@ -33,6 +33,10 @@ export const Route = createFileRoute("/")({
         title: "Somesh Muttinkantimath — Software Developer",
       },
       {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
+      },
+      {
         name: "description",
         content:
           "Portfolio of Somesh Muttinkantimath, a 2026 CSE graduate and full-stack, Java and AI-focused software developer based in Bengaluru.",
@@ -60,8 +64,10 @@ export const Route = createFileRoute("/")({
 });
 
 const EMAIL = "somesh.muttin@gmail.com";
+
 const LINKEDIN =
   "https://www.linkedin.com/in/somesh-muttinkantimath/";
+
 const GITHUB = "https://github.com/someshm17";
 
 /* =========================
@@ -131,15 +137,15 @@ function Socials({ vertical }: { vertical?: boolean }) {
         <Github size={22} strokeWidth={1.5} />
       </a>
 
-    <a
-  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-  target="_blank"
-  rel="noreferrer"
-  aria-label="Email"
-  className={cls}
->
-  <Mail size={22} strokeWidth={1.5} />
-</a>
+      <a
+        href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Email"
+        className={cls}
+      >
+        <Mail size={22} strokeWidth={1.5} />
+      </a>
     </div>
   );
 }
@@ -254,14 +260,14 @@ function Index() {
             <span className="absolute -bottom-2 right-0 h-1.5 w-1.5 rotate-45 bg-primary" />
           </a>
 
-        <a
-  href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-  target="_blank"
-  rel="noreferrer"
-  className="ml-16 hidden text-sm hover:text-primary md:block"
->
-  {EMAIL}
-</a>
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-16 hidden text-sm hover:text-primary md:block"
+          >
+            {EMAIL}
+          </a>
 
           <button
             onClick={() => setOpen(true)}
@@ -312,13 +318,13 @@ function Index() {
           ========================= */}
 
       <section className="relative min-h-screen overflow-hidden">
-        {/* Portrait */}
+        {/* Desktop portrait */}
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 top-8 flex justify-center md:-top-12 md:translate-x-[9%] lg:translate-x-[3%] xl:translate-x-0">
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 top-8 hidden justify-center md:-top-12 md:flex md:translate-x-[11%] lg:translate-x-[5%] xl:translate-x-[2%]">
           <img
             src={portrait}
             alt="Portrait of Somesh Muttinkantimath"
-            className="animate-portrait portrait-mask h-full max-h-[1000px] w-auto max-w-none object-cover object-top opacity-60 md:opacity-100"
+            className="animate-portrait portrait-mask h-full max-h-[1000px] w-auto max-w-none object-cover object-top md:opacity-100"
           />
         </div>
 
@@ -340,11 +346,11 @@ function Index() {
 
         {/* Hero content */}
 
-        <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-start gap-10 px-6 pb-[14vh] pt-20 md:pt-[11vh] md:grid-cols-[1fr_1fr_1fr] md:px-16 lg:pt-[10vh]">
+       <div className="relative z-10 mx-auto grid min-h-0 w-full max-w-7xl grid-cols-1 items-start gap-10 overflow-x-hidden px-6 pb-20 pt-28 md:min-h-screen md:overflow-visible md:pt-[11vh] md:grid-cols-[1fr_1fr_1fr] md:px-16 md:pb-[14vh] lg:pt-[10vh]">
           {/* Left */}
 
           <div className="animate-rise">
-            <h1 className="font-display text-5xl font-bold leading-[1.15] md:text-4xl lg:text-5xl xl:text-6xl">
+            <h1 className="max-w-full break-words font-display text-[clamp(3rem,11.5vw,4.5rem)] font-bold leading-[0.98] md:text-4xl md:leading-[1.15] lg:text-5xl xl:text-6xl">
               Hi,
               <br />
               I’m <span className="text-primary">Somesh</span>
@@ -354,13 +360,13 @@ function Index() {
               </span>
             </h1>
 
-            <p className="mt-5 text-2xl">
+            <p className="mt-4 text-xl md:mt-5 md:text-2xl">
               Software Developer
             </p>
 
             <a
               href="#work"
-              className="group mt-12 inline-flex items-center gap-4 rounded-md bg-primary py-1.5 pl-5 pr-1.5 text-primary-foreground shadow-[0_10px_30px_-10px_var(--primary)] transition hover:-translate-y-0.5"
+              className="group mt-8 inline-flex max-w-full items-center gap-4 rounded-md bg-primary py-1.5 pl-5 pr-1.5 text-primary-foreground shadow-[0_10px_30px_-10px_var(--primary)] transition hover:-translate-y-0.5 md:mt-12"
             >
               View My Work
 
@@ -368,6 +374,16 @@ function Index() {
                 <ArrowRight size={18} />
               </span>
             </a>
+          </div>
+
+          {/* Mobile portrait */}
+
+          <div className="relative z-0 -my-2 flex h-[420px] items-center justify-center md:hidden">
+            <img
+              src={portrait}
+              alt="Portrait of Somesh Muttinkantimath"
+              className="animate-portrait portrait-mask h-full w-auto max-w-[94vw] object-contain object-top opacity-55"
+            />
           </div>
 
           {/* Center spacing for portrait */}
@@ -379,12 +395,12 @@ function Index() {
           <div className="animate-rise [animation-delay:250ms]">
             <p className="text-primary">Expert on</p>
 
-            <p className="mt-3 text-2xl font-medium leading-snug md:text-xl lg:text-2xl xl:text-[1.7rem]">
+            <p className="mt-3 max-w-md text-xl font-medium leading-snug md:max-w-none md:text-xl lg:text-2xl xl:text-[1.7rem]">
               Based in Bengaluru, India — I’m a full-stack &amp;
               Java developer.
             </p>
 
-            <p className="mt-7 leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-md leading-relaxed text-muted-foreground md:mt-7 md:max-w-none">
               A Computer Science graduate and Software Developer
               focused on building practical, responsive applications
               and solving problems with clean, efficient solutions.
@@ -403,7 +419,7 @@ function Index() {
 
         {/* Hero bottom social links */}
 
-        <div className="absolute bottom-10 left-6 z-10 flex items-end gap-16 md:left-16">
+        <div className="relative z-10 mt-10 flex items-end gap-6 px-0 pb-2 md:absolute md:bottom-10 md:left-16 md:mt-0 md:gap-16 md:px-0 md:pb-0">
           <div className="hidden md:block">
             <Socials vertical />
           </div>
@@ -430,7 +446,7 @@ function Index() {
 
         <a
           href="#contact"
-          className="absolute bottom-10 right-6 z-10 flex items-center gap-3 text-sm hover:text-primary md:right-16"
+          className="relative z-10 mx-6 mt-6 flex items-center gap-3 self-end text-sm hover:text-primary md:absolute md:bottom-10 md:right-16 md:mx-0 md:mt-0"
         >
           Let’s Chat
 
@@ -544,66 +560,68 @@ function Index() {
           WORK
           ========================= */}
 
-   {/* WORK */}
-
-<Section id="work" eyebrow="Projects" title="Selected Work">
-  <div className="space-y-6">
-    {[
-      {
-        n: "GENAI — Generative AI Chatbot",
-        s: "Full-Stack AI Chatbot",
-        d: "A conversational AI interface with full-stack architecture, OpenAI integration and persistent chat history in a database.",
-        t: "React.js · Node.js · Express.js · MongoDB · OpenAI API",
-      },
-            {
-  n: "Digital-Legal Marketplace",
-  s: "Full-Stack Legal Services Platform",
-  d: "A full-stack platform connecting clients with lawyers through legal service discovery, lawyer matching, KYC, appointment scheduling, document management, verification, and payment workflows.",
-  t: "React.js · Node.js · Express.js · REST APIs · Multer",
-},
-      {
-        n: "Patient Care System",
-        s: "Healthcare Management Platform",
-        d: "Manages health records, appointments and treatment tracking, with location-aware features.",
-        t: "Java · React.js · MySQL · Geolocation API",
-      },
-    ].map((project, index) => (
-      <article
-        key={project.n}
-        className="reveal group relative overflow-hidden rounded-lg border border-border p-8 transition hover:-translate-y-1 hover:border-primary/40 md:p-12"
+      <Section
+        id="work"
+        eyebrow="Projects"
+        title="Selected Work"
       >
-        <div className="relative grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-start">
-          <span className="font-display text-5xl text-muted-foreground/40">
-            0{index + 1}
-          </span>
+        <div className="space-y-6">
+          {[
+            {
+              n: "GENAI — Generative AI Chatbot",
+              s: "Full-Stack AI Chatbot",
+              d: "A conversational AI interface with full-stack architecture, OpenAI integration and persistent chat history in a database.",
+              t: "React.js · Node.js · Express.js · MongoDB · OpenAI API",
+            },
+            {
+              n: "Digital-Legal Marketplace",
+              s: "Full-Stack Legal Services Platform",
+              d: "A full-stack platform connecting clients with lawyers through legal service discovery, lawyer matching, KYC, appointment scheduling, document management, verification, and payment workflows.",
+              t: "React.js · Node.js · Express.js · REST APIs · Multer",
+            },
+            {
+              n: "Patient Care System",
+              s: "Healthcare Management Platform",
+              d: "Manages health records, appointments and treatment tracking, with location-aware features.",
+              t: "Java · React.js · MySQL · Geolocation API",
+            },
+          ].map((project, index) => (
+            <article
+              key={project.n}
+              className="reveal group relative overflow-hidden rounded-lg border border-border p-8 transition hover:-translate-y-1 hover:border-primary/40 md:p-12"
+            >
+              <div className="relative grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-start">
+                <span className="font-display text-5xl text-muted-foreground/40">
+                  0{index + 1}
+                </span>
 
-          <div>
-            <h3 className="font-display text-3xl md:text-4xl">
-              {project.n}
-            </h3>
+                <div>
+                  <h3 className="font-display text-3xl md:text-4xl">
+                    {project.n}
+                  </h3>
 
-            <p className="mt-1 text-primary">
-              {project.s}
-            </p>
+                  <p className="mt-1 text-primary">
+                    {project.s}
+                  </p>
 
-            <p className="mt-4 max-w-2xl text-muted-foreground">
-              {project.d}
-            </p>
+                  <p className="mt-4 max-w-2xl text-muted-foreground">
+                    {project.d}
+                  </p>
 
-            <p className="mt-5 text-sm tracking-wide text-foreground/80">
-              {project.t}
-            </p>
-          </div>
+                  <p className="mt-5 text-sm tracking-wide text-foreground/80">
+                    {project.t}
+                  </p>
+                </div>
 
-          <ArrowRight
-            className="hidden -rotate-45 text-muted-foreground transition group-hover:rotate-0 group-hover:text-primary md:block"
-            size={28}
-          />
+                <ArrowRight
+                  className="hidden -rotate-45 text-muted-foreground transition group-hover:rotate-0 group-hover:text-primary md:block"
+                  size={28}
+                />
+              </div>
+            </article>
+          ))}
         </div>
-      </article>
-    ))}
-  </div>
-</Section>
+      </Section>
 
       {/* =========================
           SERVICES
@@ -738,10 +756,12 @@ function Index() {
             <div className="mt-10 space-y-4">
               <a
                 href={`mailto:${EMAIL}`}
-                className="flex items-center gap-3 text-lg hover:text-primary"
+                className="flex min-w-0 items-start gap-3 text-lg hover:text-primary"
               >
-                <Mail size={20} />
-                {EMAIL}
+                <Mail size={20} className="mt-1 shrink-0" />
+                <span className="break-all md:break-normal">
+                  {EMAIL}
+                </span>
               </a>
 
               <a
