@@ -417,46 +417,46 @@ function Index() {
           </div>
         </div>
 
-        {/* Hero bottom social links */}
+   {/* Hero bottom social links */}
 
-        <div className="relative z-10 mt-10 flex items-end gap-6 px-0 pb-2 md:absolute md:bottom-10 md:left-16 md:mt-0 md:gap-16 md:px-0 md:pb-0">
-          <div className="hidden md:block">
-            <Socials vertical />
-          </div>
+<div className="absolute bottom-20 right-6 z-10 flex items-end gap-6 md:bottom-10 md:left-16 md:right-auto md:mt-0 md:gap-16 md:px-0 md:pb-0">
+  <div className="hidden md:block">
+    <Socials vertical />
+  </div>
 
-          <div className="md:hidden">
-            <Socials />
-          </div>
+  <div className="md:hidden">
+    <Socials />
+  </div>
 
-          <a
-            href={GITHUB}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden items-center gap-3 text-sm hover:text-primary lg:flex"
-          >
-            <span className="grid h-7 w-7 place-items-center rounded-full bg-primary">
-              <Github size={14} />
-            </span>
+  <a
+    href={GITHUB}
+    target="_blank"
+    rel="noreferrer"
+    className="hidden items-center gap-3 text-sm hover:text-primary lg:flex"
+  >
+    <span className="grid h-7 w-7 place-items-center rounded-full bg-primary">
+      <Github size={14} />
+    </span>
 
-            github.com/someshm17
-          </a>
-        </div>
+    github.com/someshm17
+  </a>
+</div>
 
-        {/* Let's Chat */}
+{/* Let's Chat */}
 
-        <a
-          href="#contact"
-          className="relative z-10 mx-6 mt-6 flex items-center gap-3 self-end text-sm hover:text-primary md:absolute md:bottom-10 md:right-16 md:mx-0 md:mt-0"
-        >
-          Let’s Chat
+<a
+  href="#contact"
+  className="absolute bottom-6 right-6 z-10 flex items-center gap-3 text-sm hover:text-primary md:bottom-10 md:right-16 md:mx-0 md:mt-0"
+>
+  Let’s Chat
 
-          <span className="relative">
-            <MessageSquareMore size={30} />
+  <span className="relative">
+    <MessageSquareMore size={30} />
 
-            <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-signal" />
-          </span>
-        </a>
-      </section>
+    <span className="absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-signal" />
+  </span>
+</a>
+</section>
 
       {/* =========================
           ABOUT

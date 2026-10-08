@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as Mail, c as FileBadge, d as ArrowRight, i as MessageSquareMore, l as Download, n as Users, o as Linkedin, r as Phone, s as Github, t as X, u as Award } from "../_libs/lucide-react.mjs";
 import { t as esm_default } from "../_libs/emailjs__browser.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-Ba3168CX.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-m2F0hAhZ.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var somesh_default = "/assets/somesh-SITua8jp.png";
@@ -181,7 +181,7 @@ function Index() {
 				className: "relative min-h-screen overflow-hidden",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "pointer-events-none absolute inset-x-0 bottom-0 top-8 hidden justify-center md:-top-12 md:flex md:translate-x-[9%] lg:translate-x-[3%] xl:translate-x-0",
+						className: "pointer-events-none absolute inset-x-0 bottom-0 top-8 hidden justify-center md:-top-12 md:flex md:translate-x-[11%] lg:translate-x-[5%] xl:translate-x-[2%]",
 						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: somesh_default,
 							alt: "Portrait of Somesh Muttinkantimath",
@@ -267,7 +267,7 @@ function Index() {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "relative z-10 mt-10 flex items-end gap-6 px-0 pb-2 md:absolute md:bottom-10 md:left-16 md:mt-0 md:gap-16 md:px-0 md:pb-0",
+						className: "absolute bottom-20 right-6 z-10 flex items-end gap-6 md:bottom-10 md:left-16 md:right-auto md:mt-0 md:gap-16 md:px-0 md:pb-0",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "hidden md:block",
@@ -291,7 +291,7 @@ function Index() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 						href: "#contact",
-						className: "relative z-10 mx-6 mt-6 flex items-center gap-3 self-end text-sm hover:text-primary md:absolute md:bottom-10 md:right-16 md:mx-0 md:mt-0",
+						className: "absolute bottom-6 right-6 z-10 flex items-center gap-3 text-sm hover:text-primary md:bottom-10 md:right-16 md:mx-0 md:mt-0",
 						children: ["Let’s Chat", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 							className: "relative",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MessageSquareMore, { size: 30 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "absolute -right-1 -top-1 h-2.5 w-2.5 rounded-full bg-signal" })]
